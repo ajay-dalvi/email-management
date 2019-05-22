@@ -1,0 +1,33 @@
+{
+  "name": "email-management",
+  "version": "1.0.0",
+  "description": "email-management service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "test": "mocha --exit ./tests/controllers/Test*.js",
+    "test:debug": "mocha --inspect-brk --exit ./tests/controllers/Test*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajay-dalvi/email-management"
+  },
+  "author": "ajay dalvi",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "express": "^4.16.2",
+    "winston": "^2.2",
+    "winston-daily-rotate-file": "^1.3",
+    "email-validator": "2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "mocha": "^6.0.0",
+    "chai": "^4.1.2",
+    "supertest": "^3.0.0",
+    "proxyquire": "^1.8.0"
+  }
+}

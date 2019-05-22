@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "db0bf50f-5ccf-4dfb-ac43-712ed997ad2e",
+		"name": "EmailManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\" : \"\",\n\t\"to\": \"\",\n\t\"subject\" : \"test email\",\n\t\"text\" : \"Hi there!!!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
