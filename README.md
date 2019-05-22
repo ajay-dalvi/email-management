@@ -44,6 +44,9 @@ Command to run email-management locally:
 
         npm start
 
+Postman collection export:
+		Postman collection export is available at ./EmailManagement.postman_collection.json
+		
 # email-management acrhitecture overview:
 
 email-management expose API to send emails. Its a NodeJS based service, utilizing express for web server.
