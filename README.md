@@ -59,7 +59,7 @@ Following are the main components of the email-management:
 
 Supported features by email-management:
 
-It currently supports sending email from a sender to To, CC and BCC list.
+It currently supports sending email from a sender to To list.
 It currently supports plain text body types while sending emails.
 
 Following are non implemented features:
